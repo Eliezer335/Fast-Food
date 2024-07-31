@@ -1,6 +1,8 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: "Anton", sans-serif;
+
 }
 .cabecario{
     width: 100%;
@@ -8,8 +10,8 @@
     padding: 10px 20px;
     box-sizing: border-box;
     background-color: red;
-    position: fixed;
-
+    /* position: fixed; */
+    
     font-family: "Anton", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -26,11 +28,8 @@
     font-size: 18px;
 }
 
-.sessao_prato_principal{
-    font-family: "Anton", sans-serif;
-    text-align: center;
-}
 .titulo_prato{
+    text-align: center;
     padding: 35px 15px;
     font-size: 18px;
 }
@@ -65,7 +64,22 @@
 }
 
 .legenda_prato{
+    width: 100%;
+    height: 100px;
+    /* background-color: aqua; */
     font-size: 11px;
     text-align: left;
     color: rgb(143, 143, 143);
+}
+
+.foter_prato{
+    display: flex;
+
+}
+
+.preco_prato{
+    font-size: 13px;
+    text-align: left;
+    padding-top: 5px;
+    box-sizing: border-box;
 }

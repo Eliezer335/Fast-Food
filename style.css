@@ -10,12 +10,20 @@
     padding: 10px 20px;
     box-sizing: border-box;
     background-color: red;
-    /* position: fixed; */
+    position: fixed;
     
     font-family: "Anton", sans-serif;
     font-weight: 500;
     font-style: normal;
     box-shadow: 0 0 15px rgb(94, 94, 94);
+}
+body{
+    position: relative;
+}
+.corpo{
+    background-color: rgba(178, 177, 177, 0.405);
+    padding-top: 100px;
+    padding-bottom: 110px;
 }
 
 .titulo_cabecario{
@@ -44,7 +52,7 @@
 .prato{
     width: 190px;
     height: 300px;
-    /* background-color: aqua; */
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 15px rgb(94, 94, 94);
     padding: 10px;
@@ -82,4 +90,27 @@
     text-align: left;
     padding-top: 5px;
     box-sizing: border-box;
+}
+
+.footer{
+    width: 100%;
+    height: 80px;
+    padding: 10px 20px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgb(94, 94, 94);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.finalizar_pedido{
+    width: 280px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: rgb(8, 169, 35);
+    border: none;
+    color: white;
+    
 }

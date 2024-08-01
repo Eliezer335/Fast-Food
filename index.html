@@ -16,99 +16,118 @@
             <div class="subtitulo_cabecario">Sua comida em poucos minutos</div>
         </div>
     </header>
-    <section class="sessao_prato_principal">
-        <h3 class="titulo_prato">Comece pelo seu prato!</h3>
-        <div class="escolha_de_pratos">
-            <div class="prato">
-                <img class="imagem_prato" src="imagens/1Carne de Sol do Sertão4.jpg" alt="">
-                <h3 class="nome_prato">Carne de Sol do Sertão</h3>
-                <p class="legenda_prato">Arroz de leite com queijo coalho, coberto com carne de sol desfiada e refogada namanteiga da terra com cebola roxa, 
-                   nata e coentro. Gratinada com queijo coalho.Acompanha macaxeira frita</p>
-                <div class="foter_prato">
-                    <p class="preco_prato">R$ 129,90</p>   
-                </div>   
+    <main class="corpo">
+        <section class="sessao_prato_principal">
+            <h3 class="titulo_prato">Comece pelo seu prato!</h3>
+            <div class="escolha_de_pratos">
+                <div class="prato" id="prato_01" onclick="escolhePedido(
+                    {
+                        nome: 'Carne de Sol do Sertão',
+                        preco: 129.90,
+                        id: 'prato_01'
+
+                    }
+                )">
+                    <img class="imagem_prato" src="imagens/1Carne de Sol do Sertão4.jpg" alt="">
+                    <h3 class="nome_prato">Carne de Sol do Sertão</h3>
+                    <p class="legenda_prato">Arroz de leite com queijo coalho, coberto com carne de sol desfiada e refogada namanteiga da terra com cebola roxa, 
+                    nata e coentro. Gratinada com queijo coalho.Acompanha macaxeira frita</p>
+                    <div class="foter_prato">
+                        <p class="preco_prato">R$ 129,90</p>   
+                    </div>   
+                </div>
+                <div class="prato" id="prato_02" onclick="escolhePedido(
+                    {
+                        nome: 'Frango a parmegiana',
+                        preco: 35.90,
+                        id: 'prato_02'
+
+                    }
+                )">
+                    <img class="imagem_prato" src="imagens/2frango_a_parmediana.jfif" alt="">
+                    <h3 class="nome_prato">Frango a parmegiana</h3>
+                    <p class="legenda_prato">Filé de peito de frango (Aprox. 170g in natura) empanado e coberto por molho 
+                        de tomate e muçarela, arroz e fritas e macarrão.</p>
+                    <div class="foter_prato">
+                        <p class="preco_prato">R$ 35,90</p>   
+                    </div>    
+                </div>
+                <div class="prato" id="prato_03">
+                    <img class="imagem_prato" src="imagens/3Megabrutus.png" alt="">
+                    <h3 class="nome_prato">Megabrutus</h3>
+                    <p class="legenda_prato">2 deliciosos hambúrgueres bovinos (Aprox. 100g cada - in natura), muçarela, 
+                        alface-americana, tomate,ovo, bacon crocante e maionese.</p>
+                    <div class="foter_prato">
+                        <p class="preco_prato">R$ 29,90</p>   
+                    </div>   
+                </div>
             </div>
-            <div class="prato">
-                <img class="imagem_prato" src="imagens/2frango_a_parmediana.jfif" alt="">
-                <h3 class="nome_prato">Frango a parmegiana</h3>
-                <p class="legenda_prato">Filé de peito de frango (Aprox. 170g in natura) empanado e coberto por molho 
-                    de tomate e muçarela, arroz e fritas e macarrão.</p>
-                <div class="foter_prato">
-                    <p class="preco_prato">R$ 35,90</p>   
-                </div>    
+        </section>
+        <section class="sessao_Bebidas">
+            <h3 class="titulo_prato">Escolha uma bebida!</h3>
+            <div class="escolha_de_pratos">
+                <div class="prato">
+                    <img class="imagem_prato" src="imagens/4coca cola.jpg" alt="">
+                    <h3 class="nome_prato">Coca Cola Refil</h3>
+                    <p class="legenda_prato">REFIL (01 unidade)</p>
+                    <div class="foter_prato">
+                        <p class="preco_prato">R$ 9,90</p>   
+                    </div>   
+                </div>
+                <div class="prato">
+                    <img class="imagem_prato" src="imagens/5Sprite.jpg" alt="">
+                    <h3 class="nome_prato">Sprite Refil</h3>
+                    <p class="legenda_prato">REFIL (01 unidade)</p>
+                    <div class="foter_prato">
+                        <p class="preco_prato">R$ 9,90</p>   
+                    </div>   
+                </div>
+                <div class="prato">
+                    <img class="imagem_prato" src="imagens/6Milk Shake Morango 400 ml.png" alt="">
+                    <h3 class="nome_prato">Milk Shake Morango 400 ml</h3>
+                    <p class="legenda_prato">Copo (1 unidade)</p>
+                    <div class="foter_prato">
+                        <p class="preco_prato">R$ 14,90</p>   
+                    </div>   
+                </div>
             </div>
-            <div class="prato">
-                <img class="imagem_prato" src="imagens/3Megabrutus.png" alt="">
-                <h3 class="nome_prato">Megabrutus</h3>
-                <p class="legenda_prato">2 deliciosos hambúrgueres bovinos (Aprox. 100g cada - in natura), muçarela, 
-                    alface-americana, tomate,ovo, bacon crocante e maionese.</p>
-                <div class="foter_prato">
-                    <p class="preco_prato">R$ 29,90</p>   
-                </div>   
+        </section>
+        <section class="sessao_sobremesa">
+            <h3 class="titulo_prato">Por fim, sua sobremesa!</h3>
+            <div class="escolha_de_pratos">
+                <div class="prato">
+                    <img class="imagem_prato" src="imagens/8mouse de maracuja.jpg" alt="">
+                    <h3 class="nome_prato">Mousse de Maracujá</h3>
+                    <p class="legenda_prato">Servida em taças elegantes,o mousse de maracujá é finalizada com uma calda de maracujá 
+                        feita na casa e decorada com sementes de maracujá, acrescentando um toque de sofisticação e frescor.</p>
+                    <div class="foter_prato">
+                        <p class="preco_prato">R$ 14,90</p>   
+                    </div>               
+                </div>
+                <div class="prato">
+                    <img class="imagem_prato" src="imagens/9Casquinha Recheada com Chocolate.png" alt="">
+                    <h3 class="nome_prato">Casquinha com Chocolate </h3>
+                    <p class="legenda_prato">Casquinha crocante e recheada com calda de chocolate. 
+                        Você escolhe o seu sorvete favorito!</p>
+                    <div class="foter_prato">
+                        <p class="preco_prato">R$ 6,90</p>   
+                    </div>   
+                </div>
+                <div class="prato">
+                    <img class="imagem_prato" src="imagens/7Petit Gateu Chocolate.png" alt="">
+                    <h3 class="nome_prato">Petit Gateu Chocolate</h3>
+                    <p class="legenda_prato">O petit gâteau Giraffas quentinho, recheado de chocolate cremoso, 
+                        com sua cobertura preferida. Sorvete à sua escolha!</p>
+                    <div class="foter_prato">
+                        <p class="preco_prato">R$ 16,90</p>   
+                    </div>   
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="sessao_Bebidas">
-        <h3 class="titulo_prato">Escolha uma bebida!</h3>
-        <div class="escolha_de_pratos">
-            <div class="prato">
-                <img class="imagem_prato" src="imagens/4coca cola.jpg" alt="">
-                <h3 class="nome_prato">Coca Cola Refil</h3>
-                <p class="legenda_prato">REFIL (01 unidade)</p>
-                <div class="foter_prato">
-                    <p class="preco_prato">R$ 9,90</p>   
-                </div>   
-            </div>
-            <div class="prato">
-                <img class="imagem_prato" src="imagens/5Sprite.jpg" alt="">
-                <h3 class="nome_prato">Sprite Refil</h3>
-                <p class="legenda_prato">REFIL (01 unidade)</p>
-                <div class="foter_prato">
-                    <p class="preco_prato">R$ 9,90</p>   
-                </div>   
-            </div>
-            <div class="prato">
-                <img class="imagem_prato" src="imagens/6Milk Shake Morango 400 ml.png" alt="">
-                <h3 class="nome_prato">Milk Shake Morango 400 ml</h3>
-                <p class="legenda_prato">Copo (1 unidade)</p>
-                <div class="foter_prato">
-                    <p class="preco_prato">R$ 14,90</p>   
-                </div>   
-            </div>
-        </div>
-    </section>
-    <section class="sessao_sobremesa">
-        <h3 class="titulo_prato">Por fim, sua sobremesa!</h3>
-        <div class="escolha_de_pratos">
-            <div class="prato">
-                <img class="imagem_prato" src="imagens/8mouse de maracuja.jpg" alt="">
-                <h3 class="nome_prato">Mousse de Maracujá</h3>
-                <p class="legenda_prato">Servida em taças elegantes,o mousse de maracujá é finalizada com uma calda de maracujá 
-                    feita na casa e decorada com sementes de maracujá, acrescentando um toque de sofisticação e frescor.</p>
-                <div class="foter_prato">
-                    <p class="preco_prato">R$ 14,90</p>   
-                </div>               
-            </div>
-            <div class="prato">
-                <img class="imagem_prato" src="imagens/9Casquinha Recheada com Chocolate.png" alt="">
-                <h3 class="nome_prato">Casquinha com Chocolate</h3>
-                <p class="legenda_prato">Casquinha crocante e recheada com calda de chocolate. 
-                    Você escolhe o seu sorvete favorito!</p>
-                <div class="foter_prato">
-                    <p class="preco_prato">R$ 6,90</p>   
-                </div>   
-            </div>
-            <div class="prato">
-                <img class="imagem_prato" src="imagens/7Petit Gateu Chocolate.png" alt="">
-                <h3 class="nome_prato">Petit Gateu Chocolate</h3>
-                <p class="legenda_prato">O petit gâteau Giraffas quentinho, recheado de chocolate cremoso, 
-                    com sua cobertura preferida. Sorvete à sua escolha!</p>
-                <div class="foter_prato">
-                    <p class="preco_prato">R$ 16,90</p>   
-                </div>   
-            </div>
-        </div>
-    </section>
-    <footer class="footer"></footer>
+        </section>
+    </main>
+    <footer class="footer">
+        <button class="finalizar_pedido">Finalizar Pedido</button>
+    </footer>
 </body>
+<script src="index.js"></script>
 </html>

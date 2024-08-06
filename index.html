@@ -36,6 +36,7 @@
                         <p class="preco_prato">R$ 129,90</p>   
                     </div>   
                 </div>
+
                 <div class="prato" id="prato_02" onclick="escolhePedido(
                     {
                         nome: 'Frango a parmegiana',
@@ -52,7 +53,15 @@
                         <p class="preco_prato">R$ 35,90</p>   
                     </div>    
                 </div>
-                <div class="prato" id="prato_03">
+
+                <div class="prato" id="prato_03" onclick="escolhePedido(
+                    {
+                        nome: 'Megabrutus',
+                        preco: 29.90,
+                        id: 'prato_03'
+
+                    }
+                )">
                     <img class="imagem_prato" src="imagens/3Megabrutus.png" alt="">
                     <h3 class="nome_prato">Megabrutus</h3>
                     <p class="legenda_prato">2 deliciosos hambúrgueres bovinos (Aprox. 100g cada - in natura), muçarela, 
@@ -66,7 +75,14 @@
         <section class="sessao_Bebidas">
             <h3 class="titulo_prato">Escolha uma bebida!</h3>
             <div class="escolha_de_pratos">
-                <div class="prato">
+                <div class="prato_1" id="bebida_01" onclick="escolheBebida(
+                    {
+                        nome: 'Coca Cola Refil',
+                        preco: 9.90,
+                        id: 'bebida_01'
+
+                    }
+                )">
                     <img class="imagem_prato" src="imagens/4coca cola.jpg" alt="">
                     <h3 class="nome_prato">Coca Cola Refil</h3>
                     <p class="legenda_prato">REFIL (01 unidade)</p>
@@ -74,7 +90,14 @@
                         <p class="preco_prato">R$ 9,90</p>   
                     </div>   
                 </div>
-                <div class="prato">
+                <div class="prato_1" id="bebida_02" onclick="escolheBebida(
+                    {
+                        nome: 'Sprite Refil',
+                        preco: 9.90,
+                        id: 'bebida_02'
+
+                    }
+                )">
                     <img class="imagem_prato" src="imagens/5Sprite.jpg" alt="">
                     <h3 class="nome_prato">Sprite Refil</h3>
                     <p class="legenda_prato">REFIL (01 unidade)</p>
@@ -82,7 +105,14 @@
                         <p class="preco_prato">R$ 9,90</p>   
                     </div>   
                 </div>
-                <div class="prato">
+                <div class="prato_1" id="bebida_03" onclick="escolheBebida(
+                    {
+                        nome: 'Milk Shake Morango 400 ml',
+                        preco: 14.90,
+                        id: 'bebida_03'
+
+                    }
+                )">
                     <img class="imagem_prato" src="imagens/6Milk Shake Morango 400 ml.png" alt="">
                     <h3 class="nome_prato">Milk Shake Morango 400 ml</h3>
                     <p class="legenda_prato">Copo (1 unidade)</p>
@@ -95,7 +125,14 @@
         <section class="sessao_sobremesa">
             <h3 class="titulo_prato">Por fim, sua sobremesa!</h3>
             <div class="escolha_de_pratos">
-                <div class="prato">
+                <div class="prato_2" id="sobremesa_01" onclick="escolheSobremesa(
+                    {
+                        nome: 'Mousse de Maracujá',
+                        preco: 14.90,
+                        id: 'sobremesa_01'
+
+                    }
+                )">
                     <img class="imagem_prato" src="imagens/8mouse de maracuja.jpg" alt="">
                     <h3 class="nome_prato">Mousse de Maracujá</h3>
                     <p class="legenda_prato">Servida em taças elegantes,o mousse de maracujá é finalizada com uma calda de maracujá 
@@ -104,7 +141,14 @@
                         <p class="preco_prato">R$ 14,90</p>   
                     </div>               
                 </div>
-                <div class="prato">
+                <div class="prato_2"  id="sobremesa_02" onclick="escolheSobremesa(
+                    {
+                        nome: 'Casquinha com Chocolate ',
+                        preco: 6.90,
+                        id: 'sobremesa_02'
+
+                    }
+                )">
                     <img class="imagem_prato" src="imagens/9Casquinha Recheada com Chocolate.png" alt="">
                     <h3 class="nome_prato">Casquinha com Chocolate </h3>
                     <p class="legenda_prato">Casquinha crocante e recheada com calda de chocolate. 
@@ -113,7 +157,14 @@
                         <p class="preco_prato">R$ 6,90</p>   
                     </div>   
                 </div>
-                <div class="prato">
+                <div class="prato_2" id="sobremesa_03" onclick="escolheSobremesa(
+                    {
+                        nome: 'Petit Gateu Chocolate',
+                        preco: 16.90,
+                        id: 'sobremesa_03'
+
+                    }
+                )">
                     <img class="imagem_prato" src="imagens/7Petit Gateu Chocolate.png" alt="">
                     <h3 class="nome_prato">Petit Gateu Chocolate</h3>
                     <p class="legenda_prato">O petit gâteau Giraffas quentinho, recheado de chocolate cremoso, 

@@ -59,6 +59,25 @@ body{
     box-sizing: border-box;
 
 }
+.prato_1{
+    width: 190px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(94, 94, 94);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.prato_2{
+    width: 190px;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(94, 94, 94);
+    padding: 10px;
+    box-sizing: border-box;
+}
 
 .imagem_prato{
     width: 100%;
@@ -113,4 +132,11 @@ body{
     border: none;
     color: white;
     
+}
+
+.check {
+    border: 3px solid rgb(8, 169, 35);
+    box-sizing: content-box;
+    box-shadow: 0 0 20px  rgb(8, 169, 35);
+    display: block;
 }

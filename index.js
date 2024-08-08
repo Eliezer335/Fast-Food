@@ -67,3 +67,32 @@ const escolheSobremesa = (informacao)=>{
 
 
 }
+
+const finalizarPedido = (pedido)=>{
+    const elementoParaAbertura =  document.querySelector(pedido)
+    elementoParaAbertura.style.display="flex";
+
+    constpopUp = document.getElementById("idpopUp");
+
+    popUp.innerHTML += `
+        section class="popUp" id="idpopUp">
+            <div class="ConfirmarPedidos">
+                <h2>Confirme o seu Pedido</h2>
+                <div class="pedido">pedido1</div>
+                <div class="pedido">pedido2</div>
+                <div class="pedido">pedido3</div>
+                <div class="total">Total</div>
+                <div class="botoesPopUp">
+                    <button class="btnConfirmarPedido">Tudo certo, pode pedir</button>
+                    <div class="cancelar" onclick="cancelaPedido('.popUp')">Cancelar</div>
+                </div>
+            </div>
+        </section>
+    `;
+}
+
+const cancelaPedido = (pedido) => {
+    const elementoParaCancelar = document.querySelector(pedido)
+    elementoParaCancelar.style.display="none";
+}
+

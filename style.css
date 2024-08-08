@@ -12,7 +12,8 @@
     background-color: red;
     position: fixed;
     
-    font-family: "Anton", sans-serif;
+    /* font-family: "Anton", sans-serif; */
+    text-align: center;
     font-weight: 500;
     font-style: normal;
     box-shadow: 0 0 15px rgb(94, 94, 94);
@@ -139,4 +140,46 @@ body{
     box-sizing: content-box;
     box-shadow: 0 0 20px  rgb(8, 169, 35);
     display: block;
+}
+
+.popUp{
+    z-index: 99;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.674);
+
+}
+
+.ConfirmarPedidos{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgb(8, 169, 35);
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.pedido{
+    margin: 12px 0;
+}
+
+.botoesPopUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.btnConfirmarPedido{
+    width: 250px;
+    height: 45px;
+    margin: 5px 0;
+    background-color: white;
+    color: rgb(8, 169, 35);
 }

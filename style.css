@@ -22,6 +22,7 @@ body{
     position: relative;
 }
 .corpo{
+    /* width: 100%; */
     background-color: rgba(178, 177, 177, 0.405);
     padding-top: 100px;
     padding-bottom: 110px;
@@ -44,40 +45,25 @@ body{
 }
 
 .escolha_de_pratos{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 30px 200px;
+    justify-content: space-around;
+    /* padding: 30px 200px; */
+
 }
 
-.prato{
+.prato, .prato_1, .prato_2{
     width: 190px;
+    min-width: 190px;
     height: 300px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 15px rgb(94, 94, 94);
     padding: 10px;
     box-sizing: border-box;
-
-}
-.prato_1{
-    width: 190px;
-    height: 300px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgb(94, 94, 94);
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.prato_2{
-    width: 190px;
-    height: 300px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgb(94, 94, 94);
-    padding: 10px;
-    box-sizing: border-box;
+    margin: 0 20px; 
+    
 }
 
 .imagem_prato{
@@ -167,6 +153,8 @@ body{
 }
 .pedido{
     margin: 12px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .botoesPopUp{
@@ -182,4 +170,22 @@ body{
     margin: 5px 0;
     background-color: white;
     color: rgb(8, 169, 35);
+}
+
+@media(max-width: 616px){
+    .escolha_de_pratos{
+        width: auto;
+        display: flex;
+        justify-content: none;
+        overflow-x: scroll;
+    }
+    /* ::-webkit-scrollbar{
+        scrollbar-: 50px;
+        background-color: aqua;
+        
+    } */
+    .corpo{
+        width: 100%;
+    }
+    
 }

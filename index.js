@@ -66,16 +66,16 @@ const finalizarPedido = (pedido)=>{
         <div class="ConfirmarPedidos">
             <h2>Confirme o seu Pedido</h2>
             <div class="pedido">
-                <p>Prato: ${prato}</p>
-                <p>Valor: ${precoPrato}</p>
+                <p>${prato}</p>
+                <p>R$: ${precoPrato}</p>
             </div>
             <div class="pedido">
-                <p>Prato: ${bebida}</p>
-                <p>Valor: ${precoBebida}</p>
+                <p> ${bebida}</p>
+                <p>R$: ${precoBebida}</p>
             </div>         
             <div class="pedido">
-                <p>Prato: ${sobremesa}</p>
-                <p>Valor: ${precoSobremesa}</p>
+                <p> ${sobremesa}</p>
+                <p>R$: ${precoSobremesa}</p>
             </div>
             <div class="pedido">
                 <p></p>

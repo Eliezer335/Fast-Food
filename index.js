@@ -98,8 +98,8 @@ const cancelaPedido = (pedido) => {
 function sendWhatsAppMessage(phoneNumber, message) {
     const precoTotal = parseFloat(precoPrato + precoBebida + precoSobremesa).toFixed(2);
 
-    const texto = `o seu pedido é:<br> ${prato}, ${precoPrato} \\n ,${bebida},
-    ${precoBebida} \n ,${sobremesa},${precoSobremesa} \n ,Total: ${precoTotal} `
+    const texto = `o seu pedido é: ${prato}, ${precoPrato},${bebida},
+    ${precoBebida},${sobremesa},${precoSobremesa},Total: ${precoTotal} `
     // Codifica a mensagem para a URL
     const encodedMessage = encodeURIComponent(texto);
 

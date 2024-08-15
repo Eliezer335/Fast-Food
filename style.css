@@ -179,11 +179,11 @@ body{
         justify-content: none;
         overflow-x: scroll;
     }
-    /* ::-webkit-scrollbar{
-        scrollbar-: 50px;
-        background-color: aqua;
+    ::-webkit-scrollbar{
+        scrollbar-width: none;
         
-    } */
+        
+    }
     .corpo{
         width: 100%;
     }

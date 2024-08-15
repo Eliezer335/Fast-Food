@@ -49,8 +49,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* padding: 30px 200px; */
-
+    padding: 30px 0;
+    box-sizing: border-box;
 }
 
 .prato, .prato_1, .prato_2{

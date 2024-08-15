@@ -97,8 +97,11 @@ const cancelaPedido = (pedido) => {
 
 function sendWhatsAppMessage(phoneNumber, message) {
     const precoTotal = parseFloat(precoPrato + precoBebida + precoSobremesa).toFixed(2);
+
+    const texto = `o seu pedido é: ${prato}, ${precoPrato} \n ,${bebida},
+    ${precoBebida} \n ,${sobremesa},${precoSobremesa} \n ,Total,${precoTotal} `
     // Codifica a mensagem para a URL
-    const encodedMessage = encodeURIComponent(prato,precoPrato);
+    const encodedMessage = encodeURIComponent(texto);
 
     // Cria a URL com o número de telefone e a mensagem codificada
     const url = `https://api.whatsapp.com/send?phone=${+5549991105517}&text=${encodedMessage}`;

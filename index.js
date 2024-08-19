@@ -5,11 +5,11 @@ let precoBebida = "";
 let sobremesa = "";
 let precoSobremesa = "";
 
-const escolhePedido = (informacao)=>{
-    const prato1 = document.querySelectorAll(".prato");
-    console.log(prato1)
 
-    prato1.forEach((prato) => {
+const escolhePedido = (informacao)=>{
+    const pratos = document.querySelectorAll(".prato");
+
+    pratos.forEach((prato) => {
         prato.classList.remove("check");
     }) //executa a mesma ação para todos os elementos
 
@@ -18,29 +18,41 @@ const escolhePedido = (informacao)=>{
 
    prato = informacao.nome;
    precoPrato = informacao.preco;
+   
+   const botaoFinalizarPedido = document.getElementById("botaoVerificaPedidos")
+   if(prato !== "" && bebida !== "" && sobremesa !== ""){
+    botaoFinalizarPedido.disabled= false
+
+    }
 
 }
 const escolheBebida = (informacao)=>{
-    const bebida1 = document.querySelectorAll(".prato_1");
-    // console.log(bebida1)
+    const bebidas = document.querySelectorAll(".prato_1");
+    console.log(bebidas)
 
-    bebida1.forEach((prato) => {
+    bebidas.forEach((prato) => {
         prato.classList.remove("check");
     }) //executa a mesma ação para todos os elementos
 
-    const prato = document.getElementById(informacao.id);
-    prato.classList.add("check");
+    const bebidaDom = document.getElementById(informacao.id);
+    bebidaDom.classList.add("check");
 
    bebida = informacao.nome;
    precoBebida = informacao.preco;
 
+   const botaoFinalizarPedido = document.getElementById("botaoVerificaPedidos")
+   if(prato !== "" && bebida !== "" && sobremesa !== ""){
+    botaoFinalizarPedido.disabled= false
+
+    }
+
 }
 
 const escolheSobremesa = (informacao)=>{
-    const sobremesa1 = document.querySelectorAll(".prato_2");
-    // console.log(bebida1)
+    const sobremesas = document.querySelectorAll(".prato_2");
+    console.log(sobremesas)
 
-    sobremesa1.forEach((prato) => {
+    sobremesas.forEach((prato) => {
         prato.classList.remove("check");
     }) //executa a mesma ação para todos os elementos
 
@@ -49,14 +61,35 @@ const escolheSobremesa = (informacao)=>{
 
    sobremesa = informacao.nome;
    precoSobremesa = informacao.preco;
-   console.log("Sobremesa ----",sobremesa)
+//    console.log("Sobremesa ----",sobremesa)
+
+   const botaoFinalizarPedido = document.getElementById("botaoVerificaPedidos")
+   if(prato !== "" && bebida !== "" && sobremesa !== ""){
+    botaoFinalizarPedido.disabled= false
+
+    }
 
 
+}
+const botaoVerificaPedidos = ()=> {
+    const botaoFinalizarPedido = document.getElementById("botaoVerificaPedidos")
+
+
+    if(prato != "" & bebida != "" & sobremesa != ""){
+        botaoFinalizarPedido.disabled = false
+
+    }else{
+        console.log("Funcionou Else")
+        return false
+    }
+    
 }
 
 const finalizarPedido = (pedido)=>{
     const elementoParaAbertura =  document.querySelector(pedido)
     elementoParaAbertura.style.display="flex";
+    const botaoFinalizarPedido = document.getElementById("botaoVerificaPedidos")
+    // botaoFinalizarPedido.disabled= true;
     const precoTotal = parseFloat(precoPrato + precoBebida + precoSobremesa).toFixed(2);
 
 
@@ -88,6 +121,14 @@ const finalizarPedido = (pedido)=>{
             </div>
         </div>
     `;
+
+    
+
+
+    if(prato !== "" && bebida !== "" && sobremesa !== ""){
+        botaoFinalizarPedido.disabled= false
+
+    }
 }
 
 const cancelaPedido = (pedido) => {

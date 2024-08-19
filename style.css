@@ -179,7 +179,7 @@ body{
     .escolha_de_pratos{
         width: auto;
         display: flex;
-        justify-content: none;
+        justify-content: start;
         overflow-x: scroll;
     }
     ::-webkit-scrollbar{

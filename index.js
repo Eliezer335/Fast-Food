@@ -150,6 +150,5 @@ function sendWhatsAppMessage(phoneNumber, message) {
     // Abre o WhatsApp em uma nova janela/aba
     window.open(url, '_blank');
 }
-
 // Exemplo de uso
 sendWhatsAppMessage('5581999999999', 'Olá, isso é uma mensagem automática!');
